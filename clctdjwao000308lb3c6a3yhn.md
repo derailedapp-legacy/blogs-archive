@@ -4,7 +4,7 @@ After much conception and two versions, the Derailed Gateway will finally be hea
 
 For me, learning it was such an improvement for my coding patterns as it helped me learn the fundamentals of functional programming and step into the world of Rust.
 
-\## System Design
+## System Design
 
 The Gateway Design is, and always has been, complicated to allow for higher scalability. And since it's in Elixir, also quite different from how many other alternatives do it.
 
@@ -28,6 +28,6 @@ Every part of a Derailed Gateway connection with a user is tied to a Session, a 
 
 The \`Derailed.Ready\` module will stay but will be turned into an asynchronous GenServer and be a separate module to provide more scalability.
 
-\## Umbrella Design
+## Umbrella Design
 
 For v1 we will be taking advantage of Elixir's Umbrella design and splitting up all our modules to a monorepo-based Umbrella project which can be separately scaled based on demand and load.
